@@ -1,0 +1,356 @@
+@charset "utf-8";
+
+/*Bọc trang*/
+#wrap{
+	padding:0;
+	margin:0 auto;
+	background-color:#39F;
+	min-height:1000px;
+	}
+/*header*/
+.container{
+	width:1200px;
+	margin:0 auto;
+	}
+.container > begin{
+	position:relative;
+	background-size:100% 100%;
+	height:0;
+	padding-bottom:21%;
+	}
+/*nav*/
+.menu{
+	position:relative;
+	}
+/*tìm kiếm*/
+.timkiem{
+	position:absolute;
+	right:40px;
+	top:10px;
+	}
+/*thanh menu*/
+.menu > ul{
+	padding:0px;
+	margin:0px;
+	background-color:#C00;
+	border-radius:3px;
+	text-align:center;
+	list-style:none;
+	}	
+.menu ul ul{
+	position:absolute;
+	display:none;
+	background-color:#69F;
+	border-radius:3px;
+	padding:0px;
+	margin:0px;
+	width:220px;
+	list-style:none;
+	box-shadow:0 0 1px gray;
+	}
+.menu ul ul a{
+	display:block;
+	font-variant:small-caps;
+	color:#FFF;
+	font-size:large;
+	padding:0 10px;
+	line-height:30px;
+	text-decoration:none;
+	text-align:left;
+	}	
+.menu > ul > li{
+	display:inline-block;
+	position:relative;
+	}
+.menu > ul > li > a{
+	display:block;
+	text-decoration:none;;
+	font-size:large;
+	color:white;
+	padding:0 15px;
+	line-height: 40px;
+	font-variant:small-caps;
+	background:url(../anh/0257_270px-Black_triangle.gif) no-repeat right;
+	}
+.menu ul li:hover{
+	background-color:#69F;
+	}
+.menu ul ul a:hover{
+	background-color:#69F;
+	color:#C00;
+	}
+.menu > ul > li:hover > ul{
+	display:block;
+	}
+/*Phần aside*/
+.menu2{
+	background-image:linear-gradient(blue,gray);
+	width:21%;
+	min-height:300px;
+	position:relative;
+	float:left;
+	}
+/*Tạo menu đa cấp*/
+.menu2 ul {
+	padding:10px;
+	margin:5px;
+ 	background-image:linear-gradient(red,gray) ;
+ 	width: 240px;
+ 	padding: 0;
+ 	list-style-type: none;
+ 	text-align: center;
+	border: 2px solid lightgray ;
+	border-radius:5px;
+	}
+.menu2 li {
+ 	width: auto;
+ 	height: 40px;
+ 	line-height: 40px;
+ 	border-bottom: 1px solid #000;
+	padding: 0;
+	}
+.menu2 li a {
+ 	text-decoration: none;
+ 	color: #FFF;
+ 	font-weight: bold;
+ 	display: block;
+	}
+.menu2 li:hover {
+ 	background: #69F;
+	}
+.menu2 ul li {
+ 	position: relative;
+	}
+.menu2 .sub-menu {
+ 	position: absolute;
+ 	left: 235px;
+ 	top: 0;
+ 	display: none;
+	}
+.menu2 li:hover .sub-menu{
+ 	display: block;
+	}	
+/*Chuyên mục lớn*/
+.table h2{
+	text-align:center;
+	padding:10px;
+	margin:5px;;
+	font-weight:bold;
+	font-variant:small-caps;
+	color:#000;
+	background-image:linear-gradient(yellow,green);
+	}
+/*Phần đăng nhập đăng kí*/
+.boxn{
+    width: 220px;
+    height: 250px;
+    padding: 10px;
+    border: 2px solid lightgray ;
+    margin: 5px;
+    float: left;
+    box-shadow:inset 0 0 5px lightgray  ;
+    background-image:linear-gradient(gray,white);
+    border-radius: 5px;
+	text-align:center;
+	}
+/*form*/
+.form-group{
+    margin:0 auto;
+	}
+.form-group>label{
+    color: #00F;
+    font-weight: bold;
+	}
+/*Thời khóa biểu*/
+.boxnm{
+	width: 220px;
+    height: 150px;
+    padding: 10px;
+    border: 2px solid lightgray ;
+    margin: 5px;
+    float: left;
+    box-shadow:inset 0 0 5px lightgray  ;
+    border-radius: 5px;
+	background-image:linear-gradient(white,yellow);
+	}
+.boxnm h2{
+	text-align:center;
+	font-variant:small-caps;
+	padding:3px;
+	margin:2px;
+	font-weight:bold;
+	}
+.boxnm h2 a:hover{
+	color:#F00;
+	text-decoration:none;
+	}
+.boxnm h2 a{
+	color:#000;
+	text-decoration:none;
+	}
+/*boxnm-1 thành tích*/
+.boxnm-1{
+	width: 220px;
+    height: 320px;
+    padding: 10px;
+    border: 2px solid lightgray ;
+    margin: 5px;
+    float: left;
+    box-shadow:inset 0 0 5px lightgray  ;
+    border-radius: 5px;
+	background-image:linear-gradient(lightyellow,lightblue);
+	position:relative;
+	}
+.boxnm-1>img{position:absolute;
+		right:0px;
+		top:1px;
+		border-radius:5px;
+		}
+.boxnm-1 h2{
+	text-align:center;
+	font-variant:small-caps;
+	padding-top:80px;;
+	margin:5px;
+	font-weight:bold;
+	font-size:22px;
+	}
+.boxnm-1 h2 a:hover{
+	color:#F00;
+	text-decoration:none;
+	}
+.boxnm-1 a{
+	display:block;
+	background:url(../anh/co.gif) no-repeat 0px center ;
+	text-decoration:none;
+	color:#000;
+	}
+/*liên kết*/
+.lienket{
+	border:1px solid #FFF;
+	width:235px;
+    float: left;
+	padding:5px;
+	margin:3px;
+	}
+	
+	
+/*article*/
+.boxtb{
+	padding:4px;
+	margin:2px;
+	border: 2px #666666 solid ;
+	border-radius:5px;
+	float:right;
+	width:930px;
+	background-color:#FFF;
+	}
+/*bảng tin*/
+.bangtin{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #6699CC;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    height: 25px;
+    padding-top: 5px;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    border-bottom:#FFF solid 3px;
+	}
+/*tiêu đề*/
+.tieude h3{
+	margin: 0 0 5px 0;
+    padding: 3px 0;
+	text-align:left;
+	}
+.tieude h3 a{
+    font-size: 18px;
+    font-weight: bold;
+	color:#03F;
+	text-decoration:none;
+	}
+.tieude h3 a:hover{
+	color:#F00;
+	text-decoration:none;
+	}
+/*ảnh*/
+.topnew{
+    float: left;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px dotted #CCC;
+	}
+/*tin tức1*/
+.tintuc{
+	display:block;
+	margin: 0 0 5px 0;
+    padding: 0px;
+	}
+.tintuc p{
+	font-size:16px;
+	font-family:"Times New Roman", Times, serif;
+	line-height:20px;
+	}
+.stt{
+	padding:7px;
+	margin:1px;
+	padding-left:20px;
+	}
+.stt a{
+	text-decoration:none;
+	color:#03F;
+	font-size:16px;
+	}
+.stt a:hover{
+	color:red;
+	text-decoration:none;
+	}
+	
+	
+/*footer*/
+.end{    
+	border-top:3px double blue;
+    line-height:30px;
+    background-image:linear-gradient(white,blue);
+    font-weight: bolder;
+    clear:both;
+	padding:2px;
+	}
+.end p{
+	text-align:center;
+	padding:0px;
+	margin:0 auto;
+		}
+/*thống kê*/
+.thongke{
+	position:absolute;
+	border:2px solid lightgray;
+	border-radius:5px;
+	width:220px;
+	height:90px;
+	top:1437px;
+	right:74px;
+	background-color:#FFF;
+	padding:0px;
+	margin:0px;
+	}
+.thongke1{
+    font-family: Arial, Helvetica, sans-serif;
+	background:url(../anh/bai%20viet.png) no-repeat 7px center;
+    background-color: #6699CC;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+    height: 20px;
+    padding-top: 2px;
+	text-align:center;
+	}
+.thongke2{
+	text-align:left;
+	padding-left:15px;
+	}
+.thongke2 p{
+	padding:5px;
+	margin:3px;
+	}
